@@ -1,11 +1,13 @@
 .sidebar {
+  display: flex;
+  flex-direction: column;
   flex: 0.35;
 }
 .sidebar__header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  border-right: 1px solid lightcoral;
+  border-right: 1px solid lightgray;
 }
 .sidebar__headerRight {
   display: flex;
@@ -35,4 +37,9 @@
 .sidebar__searchContainers > .MuiSvgIcon-root {
   color: gray;
   padding: 10px;
+}
+.sidebar__chats {
+  flex: 1;
+  background-color: white;
+  overflow-y: scroll;
 }
